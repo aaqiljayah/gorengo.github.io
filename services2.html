@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Your Name">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Services Page</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		.service-box {
+			width: 200px;
+			height: 200px;
+			background-color: #f8f9fa;
+			border-radius: 10px;
+			display: inline-flex; /* Changed from "flex" to "inline-flex" */
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+			transition: background-color 0.3s ease-in-out;
+			margin: 10px; /* Added some margin for spacing */
+		}
+
+		.service-box:hover {
+			background-color: #e9ecef;
+		}
+
+		.header-box {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8); /* Adjust the opacity and color to your preference */
+            border-radius: 5px;
+        }
+        
+        .company-name {
+            font-size: 24px;
+            font-weight: 600;
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+        }
+	</style>
+</head>
+<body>
+	<a href="menu.html" class="company-name" style="text-decoration: none;">
+		<div class="header-box">
+			<div class="company-name">Menu page</div>
+		</div>
+	</a>
+	<body background="goreng.png"></body>
+	<section class="h-100">
+		<div class="container h-100">
+			<div class="row justify-content-center align-items-center h-100">
+				<div class="col-12 text-center">
+					<div class="mb-4">
+						<div class="service-box" onclick="window.location.href = 'forums.html'">
+							<span style="font-size: 50px">🌐</span>
+							<h3>Forums</h3>
+						</div>
+						<div class="service-box" onclick="window.location.href = 'grabshare.html'">
+							<span style="font-size: 50px">👥 </span>
+							<h3>Grab Share</h3>
+						</div>
+                        <div class="service-box" onclick="window.location.href = 'apuinfo.html'">
+							<span style="font-size: 50px">📚 </span>
+							<h3>APU Info</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

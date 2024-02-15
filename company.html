@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goreng Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .menu-item img {
+            width: 100px;
+            margin-right: 10px;
+        }
+
+        .menu-item h2 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .company-name {
+            font-size: 24px;
+            font-weight: 600;
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+        }
+
+        /* Style the video: 100% width and height to cover the entire window */
+        #backgroundVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1; /* Set the video to a lower z-index to position it behind the text */
+        }
+
+        .content {
+            position: relative; /* Change to relative position */
+            padding: 20px;
+            color: #f1f1f1;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        #myBtn {
+            width: 200px;
+            font-size: 18px;
+            padding: 10px;
+            border: none;
+            background: #000;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        #myBtn:hover {
+            background: #ddd;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="backgroundVideo">
+        <source src="background video.mp4" type="video/mp4">
+    </video>
+
+    <div class="content">
+
+        <a href="index.html" class="company-name" style="text-decoration: none;">
+            <div class="header-box">
+                <div class="company-name">Gorengo</div>
+            </div>
+        </a>
+
+        <div class="header">
+            <h1>Meet the Team...</h1>
+        </div>
+
+        <div class="menu-item">
+            <img src="ayamgoreng.jpg" alt="Ayam">
+            <div class="info">
+                <h2>Ayam - Bachelor of  Computer Engineering with Honours</h2>
+                <!--<p>Risk Management and Crisis Resolution Specialist</p>-->
+                <p>Our reliable team member, takes on the role of being the company's fall guy. In the face of challenges or setbacks, Ayam assumes responsibility and works diligently to rectify any issues that may arise. You can trust in his dedication to maintaining our reputation for exceptional service and customer satisfaction.</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="daging.jpg" alt="Daging">
+            <div class="info">
+                <h2>Daging - Bachelor of Science (Honours) in Computer Science (Cyber Security) </h2>
+                <!--p>Chief Technology Officer and Web Developer</p>-->
+                <p>Daging oversees flawless code development, ensuring seamless web solution functionality. With a holistic approach, he actively contributes to the business and management aspects of the company. Additionally, Daging prioritizes robust security measures to safeguard our clients' valuable data.</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="kambinggoreng.jpg" alt="Kambing">
+            <div class="info">
+                <h2>Kambing - Bachelor of  Mechatronic Engineering with Honours</h2>
+                <!-- <p>Head of Technology and Technical Oversight</p> -->
+                <p>Heading our technology sector is Kambing, a visionary leader who oversees the entire company from a technical standpoint. With his keen eye for innovation and industry trends, Kambing ensures that our solutions are always at the forefront of technological advancements, providing you with a competitive edge in the market.</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="ikangoreng.jpg" alt="Ikan">
+            <div class="info">
+                <h2>Ikan - Bachelor of Arts (Honours) in Industrial Design</h2>
+                <!--<p>Lead Designer and Graphics Specialist</p>-->
+                <p>Our design maestro, leads our design sector with creativity and finesse. From captivating graphics to intuitive user interfaces, Ikan's expertise ensures that your brand stands out in a visually appealing and engaging manner. With a meticulous approach, he leaves no stone unturned in delivering exceptional design solutions.</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pisang.jpg" alt="Member">
+            <div class="info">
+                <h2>Pisang - Bachelor of Science (Honours) in Actuarial Studies</h2>
+                <!--<p>Data Structure and Privacy Manager</p> -->
+                <p>Pisang, our latest addition, is the driving force behind our data structure. With a focus on user data privacy and security, Pisang meticulously oversees the usage of customer data, ensuring compliance with the highest industry standards.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-5 text-muted">
+        &copy; 2024 &mdash; <a href="company.html" class="text-dark">Gay Geeks Sdn Bhd</a>
+    </div>
+
+    <script>
+        // Get the video
+        var video = document.getElementById("backgroundVideo");
+
+        // Get the button
+        var btn = document.getElementById("myBtn");
+
+        // Pause and play the video, and change the button text
+        function myFunction() {
+            if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+            } else {
+                video.pause();
+                btn.innerHTML = "Play";
+            }
+        }
+    </script>
+</body>
+</html>
